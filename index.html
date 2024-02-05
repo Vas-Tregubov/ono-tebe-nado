@@ -5,8 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <p>Check</p>
+    <header class="header">
+      <nav>
+        <div class="menu">
+          <li class="header__menu">
+            <!-- чтобы сделать список с кружочками -->
+            <ul class="header__menu_no-bullit">
+              <a class="menu-active" href="#">главная</a>
+            </ul>
+            <!-- чтобы сделать первую ссылку без кружочка -->
+            <ul>
+              <a class="menu-inactive" href="#">посмотреть лоты</a>
+            </ul>
+            <ul>
+              <a class="menu-inactive" href="#">об аукционе</a>
+            </ul>
+          </li>
+          <div class="header__logo">
+            <a href="#">
+              <img
+                src="./images/logo-black.svg"
+                alt="Логотип с надписью 'Оно тебе надо'"
+              />
+            </a>
+          </div>
+          <div class="header__contacts">
+            <!-- укажешь выравнивание для блока -->
+            <address>
+              <li class="contacts">
+                <!-- сбросишь стили для списка в хедере и в футере -->
+                <ul class="contacts__contact-underlined">
+                  +9&nbsp;999&nbsp;555&nbsp;5555
+                </ul>
+                <ul class="contacts__contact-underlined">
+                  info@sobaka.ge
+                </ul>
+                <ul>
+                  наб. Принсенграхт 263- 265, Амстердам
+                </ul>
+              </li>
+            </address>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-page">
+        <div class="hero-page__background-image">
+          <img src="./images/cover.jpg" alt="Картина 'Цветок лотоса'" />
+          <div class="hero-page__background-image image-overlay">
+            <div class="hero-page__title">
+              <h1>
+                <p class="hero-page__title_align-left">
+                  <span class="hero-page__title_lspace1">о</span>
+                  <span class="hero-page__title_lspace2">н</span>
+                  <span class="hero-page__title_lspace3">о</span>
+                </p>
+                <!-- первый, чтобы задать кернинг 30, второй для 60%, третий для сброса отступа в конце строки -->
+                <p class="hero-page__title_align-center">
+                  <span class="hero-page__title_lspace1">те</span>
+                  <span class="hero-page__title_lspace2">б</span>
+                  <span class="hero-page__title_lspace3">е</span>
+                </p>
+                <p class="hero-page__title_align-right">
+                  <span class="hero-page__title_lspace2">н</span>
+                  <span class="hero-page__title_lspace1">ад</span>
+                  <span class="hero-page__title_lspace3">о</span>
+                </p>
+              </h1>
+            </div>
+            <div class="hero-page__subline">
+              <h2>
+                <span class="hero-page__subtitle_wspace1">аукцион вещей</span>
+                <span class="hero-page__subtitle_wspace2">, в которые</span>
+                <span class="hero-page__subtitle_wspace1">никто</span>
+                <span class="hero-page__subtitle_wspace2">не верил</span>
+                <!-- по идее первый класс чтобы задать ворд-спейсинг один, а второй — для второго -->
+              </h2>
+              <button class="button">
+                Сделать&nbsp;ставку
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
