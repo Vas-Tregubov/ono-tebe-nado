@@ -2,6 +2,7 @@
   margin: 92px 24px 96px 24px;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
+  justify-items: center;
   align-items: center;
   font-family: Raleway, sans-serif;
   font-weight: normal;
@@ -30,7 +31,9 @@
 }
 
 .header__contacts {
-  align-self: end;
+  display: flex;
+  flex-direction: column;
+  /* justify-self: flex-end; */
   /* transform: translate(-5%, 1%); */
 }
 
@@ -42,7 +45,6 @@
   display: block;
   min-width: 136px;
   height: 104px;
-  /* transform: translate(-70%); */
 }
 
 .address_style {
